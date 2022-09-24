@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+    <title>Assignment 1.1</title>
+    <style>
+        .rating {
+  margin: 40px 12px;
+  border: none;
+  float: left;
+}
+
+.rating > label {
+  color: #90A0A3;
+  float: right;
+}
+
+.rating > label:before {
+  margin: 5px;
+  font-size: 2em;
+  font-family: FontAwesome;
+  content: "\f005";
+  display: inline-block;
+}
+
+.rating > input {
+  display: none;
+}
+
+.rating > input:checked ~ label,
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+  color: #F79426;
+}
+
+.rating > input:checked + label:hover,
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label,
+.rating > input:checked ~ label:hover ~ label {
+  color: #FECE31;
+}
+        body {
+    background-color: #0b1342;
+}
+.span{
+    padding-left: 22px;
+    margin-top: 87px;
+    background-color: #20243d;
+    border-radius: 12px;
+    height: 359px;
+    max-width: 293px;
+    padding-top: -24px;
+}
+
+.lpi{    height: 38px;
+    width: 37px;
+    padding: 8px 9px;
+    border-color: white;
+    border-width: 1px;
+    margin-left: -33px;}
+.lp{padding-right: 47px;
+    /* margin-left: 0px; */
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    justify-content: space-between;
+    align-items: center;}
+.row{display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;}
+.pr{
+    display: inline-flex;
+    flex-direction: row;
+    align-items: baseline;
+    align-content: center;
+    justify-content: space-between;
+}
+button{padding-top: 11px;
+    padding-bottom: 7px;
+    padding-left: 88px;
+    background-color: black;
+    margin-left: 13px;
+    text-align: center;
+    color: #ffc107;
+    padding-right: 88px;
+    margin-top: -18px;
+    font-size: 22px;
+    border-radius: 16px;}
+        </style>
+  </head>
+
+  <body>
+
+    <div class="container" style="padding: 32px 42px; ;">
+        <div class="row">
+   
+   
+         <div class="span">
+             <figure class="card"    >
+                <img class="lpi"src="star.jpg" style="border-radius:50%;"> 
+               <div class="text">
+                 <pre><h4 style="margin-left: -28px ;color:#fff ;font-family:verdana;">How Did we do?</h4></pre>
+                   <p style="color:gray ;margin-left: -28px ;">Please let us know how did we do support us give the rating below </p>
+                </div>
+               </figure>
+              
+               <div class="rating">
+                <input type="radio" id="star5" name="rating" value="5" />
+                <label class="star" for="star5" title="Awesome" aria-hidden="true"></label>
+                <input type="radio" id="star4" name="rating" value="4" />
+                <label class="star" for="star4" title="Great" aria-hidden="true"></label>
+                <input type="radio" id="star3" name="rating" value="3" />
+                <label class="star" for="star3" title="Very good" aria-hidden="true"></label>
+                <input type="radio" id="star2" name="rating" value="2" />
+                <label class="star" for="star2" title="Good" aria-hidden="true"></label>
+                <input type="radio" id="star1" name="rating" value="1" />
+                <label class="star" for="star1" title="Bad" aria-hidden="true"></label>
+              </div>
+              <button type="submit" >Submit</button>
+         </div>
+
+         </div>
+   </div>
+
+    </html>

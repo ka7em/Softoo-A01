@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 36px;
+    height: 18px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 13px;
+    width: 13px;
+    left: 4px;
+    bottom: 3px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(16px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+    .span{
+        background-color: #d1d3dd;
+    border-radius: 12px;
+    height: 286px;
+    max-width: 417px;
+    margin-left: 34%;
+    margin-top: 5%;
+    }
+    .rang{display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    /* margin-top: 29px; */
+    padding-top: 1px;
+    /* width: 126px; */}
+  .up{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+  }
+
+  .mp{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .lp{
+
+  }
+  body{
+    background-repeat: no-repeat;
+    background-image: url("pi.jpg");
+    background-size: cover;
+  }
+  i{color: green;
+    padding-left: 16px;
+    text-decoration-color: black;
+    padding-top: 19px;}
+    </style>
+<meta name="viewport" content="width=device-width, initial-scale=1"></head>
+<body >
+    <div class="utxt" style="display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 39px;">
+  <h3 style="color: azure; font-family:Georgia, 'Times New Roman', Times, serif;   margin-bottom: -42px;">Traffic Based Pricing</h3> <br>
+  <h6 style="color:azure ;">Signup for 30 days trial no credit card required</h6> </div>
+    <div class="span">
+        
+    <div class="up"> <h4 style="padding-left: 24px;
+        color: grey;
+        padding-right: 80px;">100k Page Reviews </h4>   <h1>$16.00</h1> <h3>/ month</h3></div>
+
+      <div class="rang">    
+    <label for="customRange1" class="form-label"> </label>
+    <input style="width: 327px;" type="range" class="form-range" id="customRange1">
+       </div>
+
+       <div class="mp" > <h5 style="    padding-left: 144px;">Monthly Billing</h5>
+<label class="switch">
+    <input type="checkbox">
+    <span class="slider round"></span>
+  </label>
+  <h5>yearly Billing</h5>
+</div>
+
+<div class="lp"> <i class="fa-solid fa-check"></i>100% access <br><i class="fa-solid fa-check"></i>Email Reports 
+
+<button style="    color: beige;
+    margin-left: 105px;
+    border: rebeccapurple;
+    border-radius: 6px;
+    background-color: #001360;
+    height: 33px;
+    width: 108px;">Start my trial</button> 
+    </div>
+    </div>
+
+</body>
+</html>
